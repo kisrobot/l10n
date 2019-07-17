@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/l10n"
-	"github.com/qor/qor/test/utils"
+	"github.com/kisrobot/l10n"
+	"github.com/kisrobot/qor/test/utils"
 )
 
 type Product struct {

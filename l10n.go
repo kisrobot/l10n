@@ -7,11 +7,11 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
-	"github.com/qor/roles"
+	"github.com/kisrobot/admin"
+	"github.com/kisrobot/qor"
+	"github.com/kisrobot/qor/resource"
+	"github.com/kisrobot/qor/utils"
+	"github.com/kisrobot/roles"
 )
 
 // Global global language
@@ -190,7 +190,7 @@ func (l *Locale) ConfigureQorResource(res resource.Resourcer) {
 		}
 
 		// Inject for l10n
-		Admin.RegisterViewPath("github.com/qor/l10n/views")
+		Admin.RegisterViewPath("github.com/kisrobot/l10n/views")
 
 		// Middleware
 		Admin.GetRouter().Use(&admin.Middleware{
